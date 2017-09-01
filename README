@@ -1,0 +1,9 @@
+The $ound of .\ prototype
+Sources:
+* src/libpunter.py -- common json read/write code
+* src/player.py    -- smart offline punter, tries to find the best path (./punter is its copy)
+* src/passer.py    -- simple offline punter, passes all the moves, used for debugging src/player.py
+* src/online.py    -- offline-to-online wrapper+VISUALIZER, allows offline punter to play online
+  I wrote my `online.py` wrapper before judges released their `lamduct`.
+  Also it has "-v" option that visualizes all the moves! (needs python-pygame)
+  And unlike `lamduct` it actually passes "state" to the last "stop" message.
